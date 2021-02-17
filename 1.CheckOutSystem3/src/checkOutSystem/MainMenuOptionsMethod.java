@@ -2,6 +2,8 @@ package checkOutSystem;
 
 import static java.lang.System.out;
 
+import java.util.InputMismatchException;
+
 import checkOutSystem.choiceSwitchMethods.ClothesChoiceSwitchMethod;
 import checkOutSystem.choiceSwitchMethods.FoodChoiceSwitchMethod;
 import checkOutSystem.choiceSwitchMethods.FurnitureChoiceSwitchMethod;
@@ -22,6 +24,7 @@ public class MainMenuOptionsMethod {
 
 	public static void mainMenuOptions() throws InterruptedException {
 		out.println(mainList);
+		try {
 		int choice = ScannerClass.scanner.nextInt();
 		switch (choice) {
 		case 1:
@@ -80,6 +83,9 @@ public class MainMenuOptionsMethod {
 			}
 			break;
 		}
+	} catch (InputMismatchException e) {
+
+	}
 	}
 
 	// overloaded method

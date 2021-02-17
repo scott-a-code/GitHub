@@ -1,10 +1,9 @@
-package checkOutSystem.choiceSwitchMethods;
+package checkOutSystem;
 
 import static java.lang.System.out;
 
 import java.util.TreeMap;
 
-import checkOutSystem.FoodIfMethodsRefactored;
 import checkOutSystem.ifMethods.FoodIfMethods;
 import checkOutSystem.items.Food;
 import checkOutSystem.items.Item;

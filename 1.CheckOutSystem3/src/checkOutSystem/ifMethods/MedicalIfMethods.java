@@ -2,6 +2,7 @@ package checkOutSystem.ifMethods;
 
 import static java.lang.System.out;
 
+import java.util.InputMismatchException;
 import java.util.TreeMap;
 
 import checkOutSystem.MainMenuOptionsMethod;
@@ -19,6 +20,7 @@ public class MedicalIfMethods {
 	public static void paracetamolWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnParacetamol = ScannerClass.scanner.nextInt();
 		Medical medicalChoiceParacetamol = MedicalListCreator.getParacetamol();
 		while (addRemoveOrReturnParacetamol == 1) {
@@ -43,11 +45,14 @@ public class MedicalIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			MedicalIfMethods.paracetamolWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void antihistaminesWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnAntihistamines = ScannerClass.scanner.nextInt();
 		Medical medicalChoiceAntihistamines = MedicalListCreator.getAntihistamines();
 		while (addRemoveOrReturnAntihistamines == 1) {
@@ -72,11 +77,14 @@ public class MedicalIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			MedicalIfMethods.antihistaminesWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void condomsWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnCondoms = ScannerClass.scanner.nextInt();
 		Medical medicalChoiceCondoms = MedicalListCreator.getCondoms();
 		while (addRemoveOrReturnCondoms == 1) {
@@ -101,11 +109,14 @@ public class MedicalIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			MedicalIfMethods.condomsWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void coldAndFluWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnColdAndFlu = ScannerClass.scanner.nextInt();
 		Medical medicalChoiceColdAndFlu = MedicalListCreator.getColdAndFlu();
 		while (addRemoveOrReturnColdAndFlu == 1) {
@@ -130,6 +141,8 @@ public class MedicalIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			MedicalIfMethods.coldAndFluWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 }

@@ -2,6 +2,7 @@ package checkOutSystem.ifMethods;
 
 import static java.lang.System.out;
 
+import java.util.InputMismatchException;
 import java.util.TreeMap;
 
 import checkOutSystem.MainMenuOptionsMethod;
@@ -19,6 +20,7 @@ public class ClothesIfMethods {
 	public static void tshirtWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnTshirt = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceTshirt = ClothesListCreator.getTshirt();
 		while (addRemoveOrReturnTshirt == 1) {
@@ -43,11 +45,14 @@ public class ClothesIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.tshirtWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void trousersWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnTrousers = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceTrousers = ClothesListCreator.getTrousers();
 		while (addRemoveOrReturnTrousers == 1) {
@@ -72,11 +77,14 @@ public class ClothesIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.trousersWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void underwearWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnUnderwear = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceUnderwear = ClothesListCreator.getUnderwear();
 		while (addRemoveOrReturnUnderwear == 1) {
@@ -101,11 +109,14 @@ public class ClothesIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.underwearWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void shoesWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnShoes = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceShoes = ClothesListCreator.getShoes();
 		while (addRemoveOrReturnShoes == 1) {
@@ -130,11 +141,14 @@ public class ClothesIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.shoesWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void socksWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnSocks = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceSocks = ClothesListCreator.getSocks();
 		while (addRemoveOrReturnSocks == 1) {
@@ -159,5 +173,7 @@ public class ClothesIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.socksWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 }

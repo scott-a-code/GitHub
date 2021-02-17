@@ -2,6 +2,7 @@ package checkOutSystem.ifMethods;
 
 import static java.lang.System.out;
 
+import java.util.InputMismatchException;
 import java.util.TreeMap;
 
 import checkOutSystem.MainMenuOptionsMethod;
@@ -19,6 +20,7 @@ public class ToiletriesIfMethods {
 	public static void toothpasteWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnToothPaste = ScannerClass.scanner.nextInt();
 		Toiletries toiletriesChoiceToothPaste = ToiletriesListCreator.getToothpaste();
 		while (addRemoveOrReturnToothPaste == 1) {
@@ -44,11 +46,14 @@ public class ToiletriesIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			ToiletriesIfMethods.toothpasteWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void soapWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnSoap = ScannerClass.scanner.nextInt();
 		Toiletries toiletriesChoiceSoap = ToiletriesListCreator.getSoap();
 		while (addRemoveOrReturnSoap == 1) {
@@ -73,11 +78,14 @@ public class ToiletriesIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			ToiletriesIfMethods.soapWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void toiletpaperWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnToiletpaper = ScannerClass.scanner.nextInt();
 		Toiletries toiletriesChoiceToiletpaper = ToiletriesListCreator.getToiletpaper();
 		while (addRemoveOrReturnToiletpaper == 1) {
@@ -104,11 +112,14 @@ public class ToiletriesIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			ToiletriesIfMethods.toiletpaperWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void deodorantWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnDeodorant = ScannerClass.scanner.nextInt();
 		Toiletries toiletriesChoiceDeodorant = ToiletriesListCreator.getDeodorant();
 		while (addRemoveOrReturnDeodorant == 1) {
@@ -133,6 +144,8 @@ public class ToiletriesIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			ToiletriesIfMethods.deodorantWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 }

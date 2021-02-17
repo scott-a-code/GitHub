@@ -2,6 +2,7 @@ package checkOutSystem.ifMethods;
 
 import static java.lang.System.out;
 
+import java.util.InputMismatchException;
 import java.util.TreeMap;
 
 import checkOutSystem.MainMenuOptionsMethod;
@@ -20,6 +21,7 @@ public class FurnitureIfMethods {
 	public static void couchWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnCouch = ScannerClass.scanner.nextInt();
 		Furniture furnitureChoiceCouch = FurnitureListCreator.getCouch();
 		while (addRemoveOrReturnCouch == 1) {
@@ -44,11 +46,14 @@ public class FurnitureIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			FurnitureIfMethods.couchWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void tableWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturntable = ScannerClass.scanner.nextInt();
 		Furniture furnitureChoicetable = FurnitureListCreator.getTable();
 		while (addRemoveOrReturntable == 1) {
@@ -73,11 +78,14 @@ public class FurnitureIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			FurnitureIfMethods.tableWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void kitchenWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnKitchen = ScannerClass.scanner.nextInt();
 		Furniture furnitureChoiceKitchen = FurnitureListCreator.getKitchen();
 		while (addRemoveOrReturnKitchen == 1) {
@@ -102,11 +110,14 @@ public class FurnitureIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			FurnitureIfMethods.kitchenWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void lampWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnLamp = ScannerClass.scanner.nextInt();
 		Furniture furnitureChoiceLamp = FurnitureListCreator.getLamp();
 		while (addRemoveOrReturnLamp == 1) {
@@ -131,6 +142,8 @@ public class FurnitureIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			FurnitureIfMethods.lampWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 }

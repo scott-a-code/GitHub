@@ -2,6 +2,7 @@ package checkOutSystem.choiceSwitchMethods;
 
 import static java.lang.System.out;
 
+import java.util.InputMismatchException;
 import java.util.TreeMap;
 
 import checkOutSystem.ifMethods.FurnitureIfMethods;
@@ -17,6 +18,7 @@ public class FurnitureChoiceSwitchMethod {
 	public static void furnitureChoiceSwitchMethod() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int specificItemChoice = ScannerClass.scanner.nextInt();
 		switch (specificItemChoice) {
 		case 501:
@@ -58,12 +60,15 @@ public class FurnitureChoiceSwitchMethod {
 			}
 			break;
 		}
+	} catch (InputMismatchException e) {
 	}
+}
 
 	// overloaded method
 	public static void furnitureChoiceSwitchMethod(int choice1) throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		switch (choice1) {
 		case 501:
 			Furniture furnitureChoiceCouch = FurnitureListCreator.getCouch();
@@ -104,6 +109,8 @@ public class FurnitureChoiceSwitchMethod {
 			}
 			break;
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 }

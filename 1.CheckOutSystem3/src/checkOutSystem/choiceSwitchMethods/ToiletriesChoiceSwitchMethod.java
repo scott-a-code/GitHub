@@ -2,6 +2,7 @@ package checkOutSystem.choiceSwitchMethods;
 
 import static java.lang.System.out;
 
+import java.util.InputMismatchException;
 import java.util.TreeMap;
 
 import checkOutSystem.ifMethods.ToiletriesIfMethods;
@@ -19,6 +20,7 @@ public class ToiletriesChoiceSwitchMethod {
 	public static void toiletriesChoiceSwitchMethod() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int specificItemChoice = ScannerClass.scanner.nextInt();
 		switch (specificItemChoice) {
 		case 301:
@@ -62,12 +64,15 @@ public class ToiletriesChoiceSwitchMethod {
 			}
 			break;
 		}
+	} catch (InputMismatchException e) {
 	}
+}
 
 	// overloaded method
 	public static void toiletriesChoiceSwitchMethod(int choice1) throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		switch (choice1) {
 		case 301:
 			Toiletries toiletriesChoiceToothpaste = ToiletriesListCreator.getToothpaste();
@@ -110,5 +115,7 @@ public class ToiletriesChoiceSwitchMethod {
 			}
 			break;
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 }

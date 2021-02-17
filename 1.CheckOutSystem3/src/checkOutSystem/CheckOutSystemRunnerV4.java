@@ -1,9 +1,8 @@
 package checkOutSystem;
 
-import static java.lang.System.in;
 import static java.lang.System.out;
 
-import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class CheckOutSystemRunnerV4 {
 
@@ -13,12 +12,11 @@ public class CheckOutSystemRunnerV4 {
 				"Welcome to your General Store, please search for the items you wish\nto purchase by entering the number of the corresponding category:");
 		Thread.sleep(1000);
 
-		// Map<Item, Integer> shoppingList = new TreeMap<>();
-		Scanner scanner = new Scanner(in);
-
+		try {
 		MainMenuOptionsMethod.mainMenuOptions();
-
-		scanner.close();
+		} catch (InputMismatchException e) {
+			// no printing of stack trace as application is designed for end user.
+		}
 		System.exit(1);
 	}
 }

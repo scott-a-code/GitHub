@@ -2,6 +2,7 @@ package checkOutSystem.choiceSwitchMethods;
 
 import static java.lang.System.out;
 
+import java.util.InputMismatchException;
 import java.util.TreeMap;
 
 import checkOutSystem.ifMethods.MedicalIfMethods;
@@ -17,6 +18,7 @@ public class MedicalChoiceSwitchMethod {
 	public static void medicalChoiceSwitchMethod() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int specificItemChoice = ScannerClass.scanner.nextInt();
 		switch (specificItemChoice) {
 		case 401:
@@ -59,12 +61,15 @@ public class MedicalChoiceSwitchMethod {
 			}
 			break;
 		}
+	} catch (InputMismatchException e) {
 	}
+}
 
 	// overloaded method
 	public static void medicalChoiceSwitchMethod(int choice1) throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		switch (choice1) {
 		case 401:
 			Medical medicalChoiceParacetamol = MedicalListCreator.getParacetamol();
@@ -106,5 +111,7 @@ public class MedicalChoiceSwitchMethod {
 			}
 			break;
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 }

@@ -2,6 +2,7 @@ package checkOutSystem.ifMethods;
 
 import static java.lang.System.out;
 
+import java.util.InputMismatchException;
 import java.util.TreeMap;
 
 import checkOutSystem.MainMenuOptionsMethod;
@@ -19,6 +20,7 @@ public class OtherIfMethods {
 	public static void flowersWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnFlowers = ScannerClass.scanner.nextInt();
 		Other otherChoiceFlowers = OtherListCreator.getFlowers();
 		while (addRemoveOrReturnFlowers == 1) {
@@ -43,11 +45,14 @@ public class OtherIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			OtherIfMethods.flowersWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void petFoodWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnPetFood = ScannerClass.scanner.nextInt();
 		Other otherChoicePetFood = OtherListCreator.getPetFood();
 		while (addRemoveOrReturnPetFood == 1) {
@@ -72,11 +77,14 @@ public class OtherIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			OtherIfMethods.petFoodWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void toysWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnToys = ScannerClass.scanner.nextInt();
 		Other otherChoiceToys = OtherListCreator.getToys();
 		while (addRemoveOrReturnToys == 1) {
@@ -101,11 +109,14 @@ public class OtherIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			OtherIfMethods.toysWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 	public static void cardsWhileIfLoop() throws InterruptedException {
 		MapShoppingList shopList = new MapShoppingList();
 		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		try {
 		int addRemoveOrReturnCards = ScannerClass.scanner.nextInt();
 		Other otherChoiceCards = OtherListCreator.getCards();
 		while (addRemoveOrReturnCards == 1) {
@@ -130,6 +141,8 @@ public class OtherIfMethods {
 			System.out.println("Invalid input, please choose a valid option");
 			OtherIfMethods.cardsWhileIfLoop();
 		}
+	} catch (InputMismatchException e) {
+	}
 	}
 
 }
