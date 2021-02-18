@@ -31,13 +31,13 @@ public class ClothesIfMethods {
 			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnTshirt == 3) {
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnTshirt == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnTshirt == 5) {
 			IncrementorDecrementorMethods.clothesDerementationOfItemToList(shoppingList, clothesChoiceTshirt);
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.tshirtWhileIfLoop(shoppingList);
@@ -61,13 +61,13 @@ public class ClothesIfMethods {
 			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnTrousers == 3) {
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnTrousers == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnTrousers == 5) {
 			IncrementorDecrementorMethods.clothesDerementationOfItemToList(shoppingList, clothesChoiceTrousers);
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.trousersWhileIfLoop(shoppingList);
@@ -91,13 +91,13 @@ public class ClothesIfMethods {
 			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnUnderwear == 3) {
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnUnderwear == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnUnderwear == 5) {
 			IncrementorDecrementorMethods.clothesDerementationOfItemToList(shoppingList, clothesChoiceUnderwear);
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.underwearWhileIfLoop(shoppingList);
@@ -121,13 +121,13 @@ public class ClothesIfMethods {
 			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnShoes == 3) {
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnShoes == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnShoes == 5) {
 			IncrementorDecrementorMethods.clothesDerementationOfItemToList(shoppingList, clothesChoiceShoes);
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.shoesWhileIfLoop(shoppingList);
@@ -151,13 +151,13 @@ public class ClothesIfMethods {
 			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnSocks == 3) {
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnSocks == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnSocks == 5) {
 			IncrementorDecrementorMethods.clothesDerementationOfItemToList(shoppingList, clothesChoiceSocks);
 			out.println(ClothesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			ClothesIfMethods.socksWhileIfLoop(shoppingList);

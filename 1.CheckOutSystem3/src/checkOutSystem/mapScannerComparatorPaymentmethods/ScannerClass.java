@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ScannerClass {
 
-	public static final Scanner scanner = new Scanner(in);
+	public static Scanner scanner = new Scanner(in);
 }
 	/*
 	 * public static final void getScanner() { try (Scanner scanner = new

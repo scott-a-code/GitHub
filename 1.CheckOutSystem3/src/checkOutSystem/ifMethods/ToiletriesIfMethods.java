@@ -32,13 +32,13 @@ public class ToiletriesIfMethods {
 			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnToothPaste == 3) {
 			out.println(ToiletriesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnToothPaste == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnToothPaste == 5) {
 			IncrementorDecrementorMethods.toiletriesDerementationOfItemToList(shoppingList, toiletriesChoiceToothPaste);
 			out.println(ToiletriesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			ToiletriesIfMethods.toothpasteWhileIfLoop(shoppingList);
@@ -62,13 +62,13 @@ public class ToiletriesIfMethods {
 			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnSoap == 3) {
 			out.println(ToiletriesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnSoap == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnSoap == 5) {
 			IncrementorDecrementorMethods.toiletriesDerementationOfItemToList(shoppingList, toiletriesChoiceSoap);
 			out.println(ToiletriesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			ToiletriesIfMethods.soapWhileIfLoop(shoppingList);
@@ -93,14 +93,14 @@ public class ToiletriesIfMethods {
 			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnToiletpaper == 3) {
 			out.println(ToiletriesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnToiletpaper == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnToiletpaper == 5) {
 			IncrementorDecrementorMethods.toiletriesDerementationOfItemToList(shoppingList,
 					toiletriesChoiceToiletpaper);
 			out.println(ToiletriesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			ToiletriesIfMethods.toiletpaperWhileIfLoop(shoppingList);
@@ -124,13 +124,13 @@ public class ToiletriesIfMethods {
 			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnDeodorant == 3) {
 			out.println(ToiletriesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnDeodorant == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnDeodorant == 5) {
 			IncrementorDecrementorMethods.toiletriesDerementationOfItemToList(shoppingList, toiletriesChoiceDeodorant);
 			out.println(ToiletriesListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			ToiletriesIfMethods.deodorantWhileIfLoop(shoppingList);

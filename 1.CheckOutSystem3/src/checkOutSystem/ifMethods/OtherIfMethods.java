@@ -31,13 +31,13 @@ public class OtherIfMethods {
 			OtherChoiceSwitchMethod.otherChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnFlowers == 3) {
 			out.println(OtherListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnFlowers == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnFlowers == 5) {
 			IncrementorDecrementorMethods.otherDerementationOfItemToList(shoppingList, otherChoiceFlowers);
 			out.println(OtherListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			OtherIfMethods.flowersWhileIfLoop(shoppingList);
@@ -61,13 +61,13 @@ public class OtherIfMethods {
 			OtherChoiceSwitchMethod.otherChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnPetFood == 3) {
 			out.println(OtherListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnPetFood == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnPetFood == 5) {
 			IncrementorDecrementorMethods.otherDerementationOfItemToList(shoppingList, otherChoicePetFood);
 			out.println(OtherListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			OtherIfMethods.petFoodWhileIfLoop(shoppingList);
@@ -91,13 +91,13 @@ public class OtherIfMethods {
 			OtherChoiceSwitchMethod.otherChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnToys == 3) {
 			out.println(OtherListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnToys == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnToys == 5) {
 			IncrementorDecrementorMethods.otherDerementationOfItemToList(shoppingList, otherChoiceToys);
 			out.println(OtherListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			OtherIfMethods.toysWhileIfLoop(shoppingList);
@@ -121,13 +121,13 @@ public class OtherIfMethods {
 			OtherChoiceSwitchMethod.otherChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnCards == 3) {
 			out.println(OtherListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnCards == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnCards == 5) {
 			IncrementorDecrementorMethods.otherDerementationOfItemToList(shoppingList, otherChoiceCards);
 			out.println(OtherListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			OtherIfMethods.cardsWhileIfLoop(shoppingList);

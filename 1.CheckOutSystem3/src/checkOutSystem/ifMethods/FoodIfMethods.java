@@ -31,13 +31,13 @@ public class FoodIfMethods {
 			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnBread == 3) {
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnBread == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnBread == 5) {
 			IncrementorDecrementorMethods.foodDerementationOfItemToList(shoppingList, foodChoiceBread);
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FoodIfMethods.breadWhileIfLoop(shoppingList);
@@ -61,13 +61,13 @@ public class FoodIfMethods {
 			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnMilk == 3) {
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnMilk == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnMilk == 5) {
 			IncrementorDecrementorMethods.foodDerementationOfItemToList(shoppingList, foodChoiceMilk);
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FoodIfMethods.milkWhileIfLoop(shoppingList);
@@ -91,13 +91,13 @@ public class FoodIfMethods {
 			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnCereal == 3) {
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnCereal == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnCereal == 5) {
 			IncrementorDecrementorMethods.foodDerementationOfItemToList(shoppingList, foodChoiceCereal);
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FoodIfMethods.cerealWhileIfLoop(shoppingList);
@@ -121,13 +121,13 @@ public class FoodIfMethods {
 			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnEggs == 3) {
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnEggs == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnEggs == 5) {
 			IncrementorDecrementorMethods.foodDerementationOfItemToList(shoppingList, foodChoiceEggs);
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FoodIfMethods.eggsWhileIfLoop(shoppingList);
@@ -151,13 +151,13 @@ public class FoodIfMethods {
 			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnMince == 3) {
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnMince == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnMince == 5) {
 			IncrementorDecrementorMethods.foodDerementationOfItemToList(shoppingList, foodChoiceMince);
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FoodIfMethods.minceWhileIfLoop(shoppingList);
@@ -181,13 +181,13 @@ public class FoodIfMethods {
 			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnPasta == 3) {
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnPasta == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnPasta == 5) {
 			IncrementorDecrementorMethods.foodDerementationOfItemToList(shoppingList, foodChoicePasta);
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FoodIfMethods.pastaWhileIfLoop(shoppingList);
@@ -211,13 +211,13 @@ public class FoodIfMethods {
 			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnSoup == 3) {
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnSoup == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnSoup == 5) {
 			IncrementorDecrementorMethods.foodDerementationOfItemToList(shoppingList, foodChoiceSoup);
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FoodIfMethods.soupWhileIfLoop(shoppingList);
@@ -241,13 +241,13 @@ public class FoodIfMethods {
 			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnApple == 3) {
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnApple == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnApple == 5) {
 			IncrementorDecrementorMethods.foodDerementationOfItemToList(shoppingList, foodChoiceApple);
 			out.println(FoodListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FoodIfMethods.applesWhileIfLoop(shoppingList);

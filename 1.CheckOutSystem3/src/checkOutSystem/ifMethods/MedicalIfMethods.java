@@ -31,13 +31,13 @@ public class MedicalIfMethods {
 			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnParacetamol == 3) {
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnParacetamol == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnParacetamol == 5) {
 			IncrementorDecrementorMethods.medicalDerementationOfItemToList(shoppingList, medicalChoiceParacetamol);
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			MedicalIfMethods.paracetamolWhileIfLoop(shoppingList);
@@ -61,13 +61,13 @@ public class MedicalIfMethods {
 			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnAntihistamines == 3) {
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnAntihistamines == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnAntihistamines == 5) {
 			IncrementorDecrementorMethods.medicalDerementationOfItemToList(shoppingList, medicalChoiceAntihistamines);
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			MedicalIfMethods.antihistaminesWhileIfLoop(shoppingList);
@@ -91,13 +91,13 @@ public class MedicalIfMethods {
 			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnCondoms == 3) {
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnCondoms == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnCondoms == 5) {
 			IncrementorDecrementorMethods.medicalDerementationOfItemToList(shoppingList, medicalChoiceCondoms);
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			MedicalIfMethods.condomsWhileIfLoop(shoppingList);
@@ -121,13 +121,13 @@ public class MedicalIfMethods {
 			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnColdAndFlu == 3) {
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnColdAndFlu == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnColdAndFlu == 5) {
 			IncrementorDecrementorMethods.medicalDerementationOfItemToList(shoppingList, medicalChoiceColdAndFlu);
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			MedicalIfMethods.coldAndFluWhileIfLoop(shoppingList);

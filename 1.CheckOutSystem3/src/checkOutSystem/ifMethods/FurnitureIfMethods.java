@@ -32,13 +32,13 @@ public class FurnitureIfMethods {
 			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnCouch == 3) {
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnCouch == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnCouch == 5) {
 			IncrementorDecrementorMethods.furnitureDerementationOfItemToList(shoppingList, furnitureChoiceCouch);
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FurnitureIfMethods.couchWhileIfLoop(shoppingList);
@@ -62,13 +62,13 @@ public class FurnitureIfMethods {
 			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturntable == 3) {
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturntable == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturntable == 5) {
 			IncrementorDecrementorMethods.furnitureDerementationOfItemToList(shoppingList, furnitureChoicetable);
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FurnitureIfMethods.tableWhileIfLoop(shoppingList);
@@ -92,13 +92,13 @@ public class FurnitureIfMethods {
 			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnKitchen == 3) {
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnKitchen == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnKitchen == 5) {
 			IncrementorDecrementorMethods.furnitureDerementationOfItemToList(shoppingList, furnitureChoiceKitchen);
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FurnitureIfMethods.kitchenWhileIfLoop(shoppingList);
@@ -122,13 +122,13 @@ public class FurnitureIfMethods {
 			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnLamp == 3) {
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else if (addRemoveOrReturnLamp == 4) {
-			PriceCalcAndPayment.finalPaymentMethod();
+			PriceCalcAndPayment.finalPaymentMethod(shoppingList);
 		} else if (addRemoveOrReturnLamp == 5) {
 			IncrementorDecrementorMethods.furnitureDerementationOfItemToList(shoppingList, furnitureChoiceLamp);
 			out.println(MedicalListCreator.create());
-			MainMenuOptionsMethod.mainMenuOptions();
+			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
 			FurnitureIfMethods.lampWhileIfLoop(shoppingList);

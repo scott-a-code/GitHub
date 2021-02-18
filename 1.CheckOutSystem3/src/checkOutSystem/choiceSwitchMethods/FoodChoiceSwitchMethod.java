@@ -82,7 +82,7 @@ public class FoodChoiceSwitchMethod {
 			break;
 		}
 	} catch (InputMismatchException e) {
-
+		System.out.println("Error. Please only enter the numbers provided!");
 	}
 	}
 

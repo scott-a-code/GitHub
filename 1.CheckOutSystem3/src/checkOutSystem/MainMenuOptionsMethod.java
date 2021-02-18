@@ -3,6 +3,7 @@ package checkOutSystem;
 import static java.lang.System.out;
 
 import java.util.InputMismatchException;
+import java.util.Scanner;
 import java.util.TreeMap;
 
 import checkOutSystem.choiceSwitchMethods.ClothesChoiceSwitchMethod;
@@ -18,18 +19,19 @@ import checkOutSystem.listCreators.FurnitureListCreator;
 import checkOutSystem.listCreators.MedicalListCreator;
 import checkOutSystem.listCreators.OtherListCreator;
 import checkOutSystem.listCreators.ToiletriesListCreator;
-import checkOutSystem.mapScannerComparatorPaymentmethods.MapShoppingList;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
 public class MainMenuOptionsMethod {
 	
-	static String mainList = "Food - 1 \nClothing - 2 \nToiletries - 3 \nMedical products - 4 \nFurniture - 5 \nOther - 6";
+	public static String mainList = "Food - 1 \nClothing - 2 \nToiletries - 3 \nMedical products - 4 \nFurniture - 5 \nOther - 6";
 
-	public static void mainMenuOptions() throws InterruptedException {
+	public static void mainMenuOptions(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
+		Scanner scanner = new Scanner(System.in);
+		int choice = 0;
+		// do {
 		out.println(mainList);
 		try {
-		int choice = ScannerClass.scanner.nextInt();
-		TreeMap<Item, Integer> shoppingList = new MapShoppingList().getShoppingList();
+			choice = ScannerClass.scanner.nextInt();
 		switch (choice) {
 		case 1:
 			out.println(
@@ -88,8 +90,12 @@ public class MainMenuOptionsMethod {
 			break;
 		}
 	} catch (InputMismatchException e) {
-
+		System.out.println("Error. Please only enter the numbers provided!");
+		choice = scanner.nextInt();
+		mainMenuOptions(shoppingList);
+		// continue;
 	}
+//} while (true);
 	}
 
 	// overloaded method
