@@ -146,7 +146,11 @@ public class MainMenuOptionsMethod {
 		default:
 			out.println(
 					"You have not selected an valid option, please select an option from the list or enter '0' to exit");
+			try {
 			choice1 = ScannerClass.scanner.nextInt();
+			} catch (InputMismatchException e) {
+
+			}
 			switch (choice1) {
 			case 0:
 				out.println("Thank you, please shop with us again.");

@@ -13,8 +13,7 @@ import checkOutSystem.items.Toiletries;
 public class IncrementorDecrementorMethods {
 
 	public static void foodIncrementationOfItemToList(TreeMap<Item, Integer> shoppingList, Item foodChoice) {
-		// MapShoppingList shopList = new MapShoppingList();
-		// TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+		// either initialises food choice to map or increments
 		if (shoppingList.containsKey(foodChoice) == false) {
 			shoppingList.put(foodChoice, 1);
 		} else {
@@ -25,6 +24,8 @@ public class IncrementorDecrementorMethods {
 	}
 
 	public static void foodDerementationOfItemToList(TreeMap<Item, Integer> shoppingList, Food foodChoice) {
+		// either decrements food choice in map or lets user know that the item is not
+		// in the shopping list
 		if (shoppingList.containsKey(foodChoice) == true) {
 			int numberOfItems = shoppingList.get(foodChoice).intValue();
 			numberOfItems--;

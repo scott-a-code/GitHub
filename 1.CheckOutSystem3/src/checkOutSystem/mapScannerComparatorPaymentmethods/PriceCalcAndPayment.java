@@ -1,6 +1,7 @@
 package checkOutSystem.mapScannerComparatorPaymentmethods;
 
 import java.math.BigDecimal;
+import java.util.InputMismatchException;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -30,6 +31,7 @@ public class PriceCalcAndPayment {
 	}
 
 	public static void repeatFinalpaymentMethod(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
+		try {
 		String confirmChoice = ScannerClass.scanner.next();
 		if (confirmChoice.equals("y") || confirmChoice.equals("Y")) {
 			System.out.println("Purchase complete. Thank you, please shop with us again.");
@@ -42,6 +44,9 @@ public class PriceCalcAndPayment {
 			System.out.println("You have not selected a valid option, please try again");
 			confirmChoice = ScannerClass.scanner.next();
 			repeatFinalpaymentMethod(shoppingList);
+		}
+	} catch (InputMismatchException e) {
+			
 		}
 	}
 }
