@@ -11,15 +11,12 @@ import checkOutSystem.items.Clothes;
 import checkOutSystem.items.Item;
 import checkOutSystem.listCreators.ClothesListCreator;
 import checkOutSystem.mapScannerComparatorPaymentmethods.IncrementorDecrementorMethods;
-import checkOutSystem.mapScannerComparatorPaymentmethods.MapShoppingList;
 import checkOutSystem.mapScannerComparatorPaymentmethods.PriceCalcAndPayment;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
 public class ClothesIfMethods {
 
-	public static void tshirtWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void tshirtWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnTshirt = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceTshirt = ClothesListCreator.getTshirt();
@@ -31,7 +28,7 @@ public class ClothesIfMethods {
 		}
 		if (addRemoveOrReturnTshirt == 2) {
 			out.println(ClothesListCreator.create());
-			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod();
+			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnTshirt == 3) {
 			out.println(ClothesListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -43,15 +40,13 @@ public class ClothesIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			ClothesIfMethods.tshirtWhileIfLoop();
+			ClothesIfMethods.tshirtWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void trousersWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void trousersWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnTrousers = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceTrousers = ClothesListCreator.getTrousers();
@@ -63,7 +58,7 @@ public class ClothesIfMethods {
 		}
 		if (addRemoveOrReturnTrousers == 2) {
 			out.println(ClothesListCreator.create());
-			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod();
+			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnTrousers == 3) {
 			out.println(ClothesListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -75,15 +70,13 @@ public class ClothesIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			ClothesIfMethods.trousersWhileIfLoop();
+			ClothesIfMethods.trousersWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void underwearWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void underwearWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnUnderwear = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceUnderwear = ClothesListCreator.getUnderwear();
@@ -95,7 +88,7 @@ public class ClothesIfMethods {
 		}
 		if (addRemoveOrReturnUnderwear == 2) {
 			out.println(ClothesListCreator.create());
-			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod();
+			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnUnderwear == 3) {
 			out.println(ClothesListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -107,15 +100,13 @@ public class ClothesIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			ClothesIfMethods.underwearWhileIfLoop();
+			ClothesIfMethods.underwearWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void shoesWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void shoesWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnShoes = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceShoes = ClothesListCreator.getShoes();
@@ -127,7 +118,7 @@ public class ClothesIfMethods {
 		}
 		if (addRemoveOrReturnShoes == 2) {
 			out.println(ClothesListCreator.create());
-			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod();
+			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnShoes == 3) {
 			out.println(ClothesListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -139,15 +130,13 @@ public class ClothesIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			ClothesIfMethods.shoesWhileIfLoop();
+			ClothesIfMethods.shoesWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void socksWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void socksWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnSocks = ScannerClass.scanner.nextInt();
 		Clothes clothesChoiceSocks = ClothesListCreator.getSocks();
@@ -159,7 +148,7 @@ public class ClothesIfMethods {
 		}
 		if (addRemoveOrReturnSocks == 2) {
 			out.println(ClothesListCreator.create());
-			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod();
+			ClothesChoiceSwitchMethod.clothesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnSocks == 3) {
 			out.println(ClothesListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -171,7 +160,7 @@ public class ClothesIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			ClothesIfMethods.socksWhileIfLoop();
+			ClothesIfMethods.socksWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}

@@ -10,14 +10,11 @@ import checkOutSystem.items.Item;
 import checkOutSystem.items.Other;
 import checkOutSystem.listCreators.OtherListCreator;
 import checkOutSystem.mapScannerComparatorPaymentmethods.IncrementorDecrementorMethods;
-import checkOutSystem.mapScannerComparatorPaymentmethods.MapShoppingList;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
 public class OtherChoiceSwitchMethod {
 
-	public static void otherChoiceSwitchMethod() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void otherChoiceSwitchMethod(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int specificItemChoice = ScannerClass.scanner.nextInt();
 		switch (specificItemChoice) {
@@ -26,26 +23,26 @@ public class OtherChoiceSwitchMethod {
 			IncrementorDecrementorMethods.otherIncrementationOfItemToList(shoppingList, otherChoiceFlowers);
 			out.println(
 					"Flowers added to Basket\nEnter 1 to add another bouquet of Flowers\nEnter 2 to return to Other list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			OtherIfMethods.flowersWhileIfLoop();
+			OtherIfMethods.flowersWhileIfLoop(shoppingList);
 			break;
 		case 602:
 			Other otherChoicePetFood = OtherListCreator.getPetFood();
 			IncrementorDecrementorMethods.otherIncrementationOfItemToList(shoppingList, otherChoicePetFood);
 			out.println(
 					"Pet Food added to Basket\nEnter 1 to add another box of PetFood\nEnter 2 to return to Other list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			OtherIfMethods.petFoodWhileIfLoop();
+			OtherIfMethods.petFoodWhileIfLoop(shoppingList);
 		case 603:
 			Other otherChoiceToy = OtherListCreator.getToys();
 			IncrementorDecrementorMethods.otherIncrementationOfItemToList(shoppingList, otherChoiceToy);
 			out.println(
 					"Toy added to Basket\nEnter 1 to add another Toy\nEnter 2 to return to Other list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			OtherIfMethods.toysWhileIfLoop();
+			OtherIfMethods.toysWhileIfLoop(shoppingList);
 		case 604:
 			Other otherChoiceCard = OtherListCreator.getCards();
 			IncrementorDecrementorMethods.otherIncrementationOfItemToList(shoppingList, otherChoiceCard);
 			out.println(
 					"Card added to Basket\nEnter 1 to add another Card\nEnter 2 to return to Other list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			OtherIfMethods.cardsWhileIfLoop();
+			OtherIfMethods.cardsWhileIfLoop(shoppingList);
 		default:
 			out.println(
 					"You have not selected an valid option, please select an option from the list or enter '0' to exit.");
@@ -56,7 +53,7 @@ public class OtherChoiceSwitchMethod {
 				System.exit(1);
 				break;
 			default:
-				OtherChoiceSwitchMethod.otherChoiceSwitchMethod();
+				OtherChoiceSwitchMethod.otherChoiceSwitchMethod(shoppingList);
 			}
 			break;
 		}
@@ -65,9 +62,8 @@ public class OtherChoiceSwitchMethod {
 }
 
 	// overloaded method
-	public static void otherChoiceSwitchMethod(int choice1) throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void otherChoiceSwitchMethod(TreeMap<Item, Integer> shoppingList, int choice1)
+			throws InterruptedException {
 		try {
 		switch (choice1) {
 		case 601:
@@ -75,26 +71,26 @@ public class OtherChoiceSwitchMethod {
 			IncrementorDecrementorMethods.otherIncrementationOfItemToList(shoppingList, otherChoiceFlowers);
 			out.println(
 					"Flowers added to Basket\nEnter 1 to add another bouquet of Flowers\nEnter 2 to return to Other list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			OtherIfMethods.flowersWhileIfLoop();
+			OtherIfMethods.flowersWhileIfLoop(shoppingList);
 			break;
 		case 602:
 			Other otherChoicePetFood = OtherListCreator.getPetFood();
 			IncrementorDecrementorMethods.otherIncrementationOfItemToList(shoppingList, otherChoicePetFood);
 			out.println(
 					"Pet Food added to Basket\nEnter 1 to add another box of PetFood\nEnter 2 to return to Other list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			OtherIfMethods.petFoodWhileIfLoop();
+			OtherIfMethods.petFoodWhileIfLoop(shoppingList);
 		case 603:
 			Other otherChoiceToy = OtherListCreator.getToys();
 			IncrementorDecrementorMethods.otherIncrementationOfItemToList(shoppingList, otherChoiceToy);
 			out.println(
 					"Toy added to Basket\nEnter 1 to add another Toy\nEnter 2 to return to Other list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			OtherIfMethods.toysWhileIfLoop();
+			OtherIfMethods.toysWhileIfLoop(shoppingList);
 		case 604:
 			Other otherChoiceCard = OtherListCreator.getCards();
 			IncrementorDecrementorMethods.otherIncrementationOfItemToList(shoppingList, otherChoiceCard);
 			out.println(
 					"Card added to Basket\nEnter 1 to add another Card\nEnter 2 to return to Other list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			OtherIfMethods.cardsWhileIfLoop();
+			OtherIfMethods.cardsWhileIfLoop(shoppingList);
 		default:
 			out.println(
 					"You have not selected an valid option, please select an option from the list or enter '0' to exit.");
@@ -105,7 +101,7 @@ public class OtherChoiceSwitchMethod {
 				System.exit(1);
 				break;
 			default:
-				OtherChoiceSwitchMethod.otherChoiceSwitchMethod(choice1);
+				OtherChoiceSwitchMethod.otherChoiceSwitchMethod(shoppingList, choice1);
 			}
 			break;
 		}

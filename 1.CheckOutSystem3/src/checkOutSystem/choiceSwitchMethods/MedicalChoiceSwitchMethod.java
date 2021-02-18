@@ -10,14 +10,11 @@ import checkOutSystem.items.Item;
 import checkOutSystem.items.Medical;
 import checkOutSystem.listCreators.MedicalListCreator;
 import checkOutSystem.mapScannerComparatorPaymentmethods.IncrementorDecrementorMethods;
-import checkOutSystem.mapScannerComparatorPaymentmethods.MapShoppingList;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
 public class MedicalChoiceSwitchMethod {
 
-	public static void medicalChoiceSwitchMethod() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void medicalChoiceSwitchMethod(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int specificItemChoice = ScannerClass.scanner.nextInt();
 		switch (specificItemChoice) {
@@ -26,26 +23,26 @@ public class MedicalChoiceSwitchMethod {
 			IncrementorDecrementorMethods.medicalIncrementationOfItemToList(shoppingList, medicalChoiceParacetamol);
 			out.println(
 					"Paracetamol added to Basket\nEnter 1 to add another box of Paracetamol\nEnter 2 to return to Medical list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			MedicalIfMethods.paracetamolWhileIfLoop();
+			MedicalIfMethods.paracetamolWhileIfLoop(shoppingList);
 			break;
 		case 402:
 			Medical medicalChoiceAntihistamines = MedicalListCreator.getAntihistamines();
 			IncrementorDecrementorMethods.medicalIncrementationOfItemToList(shoppingList, medicalChoiceAntihistamines);
 			out.println(
 					"Antihistamines added to Basket\nEnter 1 to add another box of Antihistamines\nEnter 2 to return to Medical list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			MedicalIfMethods.antihistaminesWhileIfLoop();
+			MedicalIfMethods.antihistaminesWhileIfLoop(shoppingList);
 		case 403:
 			Medical medicalChoiceCondoms = MedicalListCreator.getCondoms();
 			IncrementorDecrementorMethods.medicalIncrementationOfItemToList(shoppingList, medicalChoiceCondoms);
 			out.println(
 					"Condoms added to Basket\nEnter 1 to add another packet of Condoms\nEnter 2 to return to Medical list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			MedicalIfMethods.condomsWhileIfLoop();
+			MedicalIfMethods.condomsWhileIfLoop(shoppingList);
 		case 404:
 			Medical medicalChoiceColdAndFlu = MedicalListCreator.getColdAndFlu();
 			IncrementorDecrementorMethods.medicalIncrementationOfItemToList(shoppingList, medicalChoiceColdAndFlu);
 			out.println(
 					"Cold & Flu added to Basket\nEnter 1 to add another packet of Cold & Flu\nEnter 2 to return to Medical list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			MedicalIfMethods.coldAndFluWhileIfLoop();
+			MedicalIfMethods.coldAndFluWhileIfLoop(shoppingList);
 
 		default:
 			out.println(
@@ -57,7 +54,7 @@ public class MedicalChoiceSwitchMethod {
 				System.exit(1);
 				break;
 			default:
-				MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod();
+				MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList, choice1);
 			}
 			break;
 		}
@@ -66,9 +63,8 @@ public class MedicalChoiceSwitchMethod {
 }
 
 	// overloaded method
-	public static void medicalChoiceSwitchMethod(int choice1) throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void medicalChoiceSwitchMethod(TreeMap<Item, Integer> shoppingList, int choice1)
+			throws InterruptedException {
 		try {
 		switch (choice1) {
 		case 401:
@@ -76,26 +72,26 @@ public class MedicalChoiceSwitchMethod {
 			IncrementorDecrementorMethods.medicalIncrementationOfItemToList(shoppingList, medicalChoiceParacetamol);
 			out.println(
 					"Paracetamol added to Basket\nEnter 1 to add another box of Paracetamol\nEnter 2 to return to Medical list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			MedicalIfMethods.paracetamolWhileIfLoop();
+			MedicalIfMethods.paracetamolWhileIfLoop(shoppingList);
 			break;
 		case 402:
 			Medical medicalChoiceAntihistamines = MedicalListCreator.getAntihistamines();
 			IncrementorDecrementorMethods.medicalIncrementationOfItemToList(shoppingList, medicalChoiceAntihistamines);
 			out.println(
 					"Antihistamines added to Basket\nEnter 1 to add another box of Antihistamines\nEnter 2 to return to Medical list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			MedicalIfMethods.antihistaminesWhileIfLoop();
+			MedicalIfMethods.antihistaminesWhileIfLoop(shoppingList);
 		case 403:
 			Medical medicalChoiceCondoms = MedicalListCreator.getCondoms();
 			IncrementorDecrementorMethods.medicalIncrementationOfItemToList(shoppingList, medicalChoiceCondoms);
 			out.println(
 					"Condoms added to Basket\nEnter 1 to add another packet of Condoms\nEnter 2 to return to Medical list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			MedicalIfMethods.condomsWhileIfLoop();
+			MedicalIfMethods.condomsWhileIfLoop(shoppingList);
 		case 404:
 			Medical medicalChoiceColdAndFlu = MedicalListCreator.getColdAndFlu();
 			IncrementorDecrementorMethods.medicalIncrementationOfItemToList(shoppingList, medicalChoiceColdAndFlu);
 			out.println(
 					"Cold & Flu added to Basket\nEnter 1 to add another packet of Cold & Flu\nEnter 2 to return to Medical list\nEnter 3 to return to the General item list\nEnter 4 to procced to checkout\nEnter 5 to remove item");
-			MedicalIfMethods.coldAndFluWhileIfLoop();
+			MedicalIfMethods.coldAndFluWhileIfLoop(shoppingList);
 
 		default:
 			out.println(
@@ -107,7 +103,7 @@ public class MedicalChoiceSwitchMethod {
 				System.exit(1);
 				break;
 			default:
-				MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(choice1);
+				MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList, choice1);
 			}
 			break;
 		}

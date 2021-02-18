@@ -11,15 +11,12 @@ import checkOutSystem.items.Food;
 import checkOutSystem.items.Item;
 import checkOutSystem.listCreators.FoodListCreator;
 import checkOutSystem.mapScannerComparatorPaymentmethods.IncrementorDecrementorMethods;
-import checkOutSystem.mapScannerComparatorPaymentmethods.MapShoppingList;
 import checkOutSystem.mapScannerComparatorPaymentmethods.PriceCalcAndPayment;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
 public class FoodIfMethods {
 
-	public static void breadWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void breadWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnBread = ScannerClass.scanner.nextInt();
 		Food foodChoiceBread = FoodListCreator.getBread();
@@ -31,7 +28,7 @@ public class FoodIfMethods {
 		}
 		if (addRemoveOrReturnBread == 2) {
 			out.println(FoodListCreator.create());
-			FoodChoiceSwitchMethod.foodChoiceSwitchMethod();
+			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnBread == 3) {
 			out.println(FoodListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -43,15 +40,13 @@ public class FoodIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethods.breadWhileIfLoop();
+			FoodIfMethods.breadWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void milkWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void milkWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnMilk = ScannerClass.scanner.nextInt();
 		Food foodChoiceMilk = FoodListCreator.getMilk();
@@ -63,7 +58,7 @@ public class FoodIfMethods {
 		}
 		if (addRemoveOrReturnMilk == 2) {
 			out.println(FoodListCreator.create());
-			FoodChoiceSwitchMethod.foodChoiceSwitchMethod();
+			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnMilk == 3) {
 			out.println(FoodListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -75,15 +70,13 @@ public class FoodIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethods.milkWhileIfLoop();
+			FoodIfMethods.milkWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void cerealWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void cerealWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnCereal = ScannerClass.scanner.nextInt();
 		Food foodChoiceCereal = FoodListCreator.getCereal();
@@ -95,7 +88,7 @@ public class FoodIfMethods {
 		}
 		if (addRemoveOrReturnCereal == 2) {
 			out.println(FoodListCreator.create());
-			FoodChoiceSwitchMethod.foodChoiceSwitchMethod();
+			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnCereal == 3) {
 			out.println(FoodListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -107,15 +100,13 @@ public class FoodIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethods.cerealWhileIfLoop();
+			FoodIfMethods.cerealWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void eggsWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void eggsWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnEggs = ScannerClass.scanner.nextInt();
 		Food foodChoiceEggs = FoodListCreator.getEggs();
@@ -127,7 +118,7 @@ public class FoodIfMethods {
 		}
 		if (addRemoveOrReturnEggs == 2) {
 			out.println(FoodListCreator.create());
-			FoodChoiceSwitchMethod.foodChoiceSwitchMethod();
+			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnEggs == 3) {
 			out.println(FoodListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -139,15 +130,13 @@ public class FoodIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethods.eggsWhileIfLoop();
+			FoodIfMethods.eggsWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void minceWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void minceWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnMince = ScannerClass.scanner.nextInt();
 		Food foodChoiceMince = FoodListCreator.getMince();
@@ -159,7 +148,7 @@ public class FoodIfMethods {
 		}
 		if (addRemoveOrReturnMince == 2) {
 			out.println(FoodListCreator.create());
-			FoodChoiceSwitchMethod.foodChoiceSwitchMethod();
+			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnMince == 3) {
 			out.println(FoodListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -171,15 +160,13 @@ public class FoodIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethods.minceWhileIfLoop();
+			FoodIfMethods.minceWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void pastaWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void pastaWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnPasta = ScannerClass.scanner.nextInt();
 		Food foodChoicePasta = FoodListCreator.getPasta();
@@ -191,7 +178,7 @@ public class FoodIfMethods {
 		}
 		if (addRemoveOrReturnPasta == 2) {
 			out.println(FoodListCreator.create());
-			FoodChoiceSwitchMethod.foodChoiceSwitchMethod();
+			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnPasta == 3) {
 			out.println(FoodListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -203,15 +190,13 @@ public class FoodIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethods.pastaWhileIfLoop();
+			FoodIfMethods.pastaWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void soupWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void soupWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnSoup = ScannerClass.scanner.nextInt();
 		Food foodChoiceSoup = FoodListCreator.getSoup();
@@ -223,7 +208,7 @@ public class FoodIfMethods {
 		}
 		if (addRemoveOrReturnSoup == 2) {
 			out.println(FoodListCreator.create());
-			FoodChoiceSwitchMethod.foodChoiceSwitchMethod();
+			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnSoup == 3) {
 			out.println(FoodListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -235,15 +220,13 @@ public class FoodIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethods.soupWhileIfLoop();
+			FoodIfMethods.soupWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void applesWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void applesWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnApple = ScannerClass.scanner.nextInt();
 		Food foodChoiceApple = FoodListCreator.getApple();
@@ -255,7 +238,7 @@ public class FoodIfMethods {
 		}
 		if (addRemoveOrReturnApple == 2) {
 			out.println(FoodListCreator.create());
-			FoodChoiceSwitchMethod.foodChoiceSwitchMethod();
+			FoodChoiceSwitchMethod.foodChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnApple == 3) {
 			out.println(FoodListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -267,7 +250,7 @@ public class FoodIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethods.applesWhileIfLoop();
+			FoodIfMethods.applesWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}

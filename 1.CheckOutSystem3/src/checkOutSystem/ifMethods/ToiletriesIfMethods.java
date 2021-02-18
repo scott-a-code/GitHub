@@ -11,15 +11,12 @@ import checkOutSystem.items.Item;
 import checkOutSystem.items.Toiletries;
 import checkOutSystem.listCreators.ToiletriesListCreator;
 import checkOutSystem.mapScannerComparatorPaymentmethods.IncrementorDecrementorMethods;
-import checkOutSystem.mapScannerComparatorPaymentmethods.MapShoppingList;
 import checkOutSystem.mapScannerComparatorPaymentmethods.PriceCalcAndPayment;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
 public class ToiletriesIfMethods {
 
-	public static void toothpasteWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void toothpasteWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnToothPaste = ScannerClass.scanner.nextInt();
 		Toiletries toiletriesChoiceToothPaste = ToiletriesListCreator.getToothpaste();
@@ -32,7 +29,7 @@ public class ToiletriesIfMethods {
 		}
 		if (addRemoveOrReturnToothPaste == 2) {
 			out.println(ToiletriesListCreator.create());
-			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod();
+			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnToothPaste == 3) {
 			out.println(ToiletriesListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -44,15 +41,13 @@ public class ToiletriesIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			ToiletriesIfMethods.toothpasteWhileIfLoop();
+			ToiletriesIfMethods.toothpasteWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void soapWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void soapWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnSoap = ScannerClass.scanner.nextInt();
 		Toiletries toiletriesChoiceSoap = ToiletriesListCreator.getSoap();
@@ -64,7 +59,7 @@ public class ToiletriesIfMethods {
 		}
 		if (addRemoveOrReturnSoap == 2) {
 			out.println(ToiletriesListCreator.create());
-			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod();
+			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnSoap == 3) {
 			out.println(ToiletriesListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -76,15 +71,13 @@ public class ToiletriesIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			ToiletriesIfMethods.soapWhileIfLoop();
+			ToiletriesIfMethods.soapWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void toiletpaperWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void toiletpaperWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnToiletpaper = ScannerClass.scanner.nextInt();
 		Toiletries toiletriesChoiceToiletpaper = ToiletriesListCreator.getToiletpaper();
@@ -97,7 +90,7 @@ public class ToiletriesIfMethods {
 		}
 		if (addRemoveOrReturnToiletpaper == 2) {
 			out.println(ToiletriesListCreator.create());
-			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod();
+			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnToiletpaper == 3) {
 			out.println(ToiletriesListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -110,15 +103,13 @@ public class ToiletriesIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			ToiletriesIfMethods.toiletpaperWhileIfLoop();
+			ToiletriesIfMethods.toiletpaperWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void deodorantWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void deodorantWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnDeodorant = ScannerClass.scanner.nextInt();
 		Toiletries toiletriesChoiceDeodorant = ToiletriesListCreator.getDeodorant();
@@ -130,7 +121,7 @@ public class ToiletriesIfMethods {
 		}
 		if (addRemoveOrReturnDeodorant == 2) {
 			out.println(ToiletriesListCreator.create());
-			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod();
+			ToiletriesChoiceSwitchMethod.toiletriesChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnDeodorant == 3) {
 			out.println(ToiletriesListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -142,7 +133,7 @@ public class ToiletriesIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			ToiletriesIfMethods.deodorantWhileIfLoop();
+			ToiletriesIfMethods.deodorantWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}

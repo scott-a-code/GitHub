@@ -11,15 +11,12 @@ import checkOutSystem.items.Item;
 import checkOutSystem.items.Medical;
 import checkOutSystem.listCreators.MedicalListCreator;
 import checkOutSystem.mapScannerComparatorPaymentmethods.IncrementorDecrementorMethods;
-import checkOutSystem.mapScannerComparatorPaymentmethods.MapShoppingList;
 import checkOutSystem.mapScannerComparatorPaymentmethods.PriceCalcAndPayment;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
 public class MedicalIfMethods {
 
-	public static void paracetamolWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void paracetamolWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnParacetamol = ScannerClass.scanner.nextInt();
 		Medical medicalChoiceParacetamol = MedicalListCreator.getParacetamol();
@@ -31,7 +28,7 @@ public class MedicalIfMethods {
 		}
 		if (addRemoveOrReturnParacetamol == 2) {
 			out.println(MedicalListCreator.create());
-			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod();
+			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnParacetamol == 3) {
 			out.println(MedicalListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -43,15 +40,13 @@ public class MedicalIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			MedicalIfMethods.paracetamolWhileIfLoop();
+			MedicalIfMethods.paracetamolWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void antihistaminesWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void antihistaminesWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnAntihistamines = ScannerClass.scanner.nextInt();
 		Medical medicalChoiceAntihistamines = MedicalListCreator.getAntihistamines();
@@ -63,7 +58,7 @@ public class MedicalIfMethods {
 		}
 		if (addRemoveOrReturnAntihistamines == 2) {
 			out.println(MedicalListCreator.create());
-			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod();
+			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnAntihistamines == 3) {
 			out.println(MedicalListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -75,15 +70,13 @@ public class MedicalIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			MedicalIfMethods.antihistaminesWhileIfLoop();
+			MedicalIfMethods.antihistaminesWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void condomsWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void condomsWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnCondoms = ScannerClass.scanner.nextInt();
 		Medical medicalChoiceCondoms = MedicalListCreator.getCondoms();
@@ -95,7 +88,7 @@ public class MedicalIfMethods {
 		}
 		if (addRemoveOrReturnCondoms == 2) {
 			out.println(MedicalListCreator.create());
-			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod();
+			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnCondoms == 3) {
 			out.println(MedicalListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -107,15 +100,13 @@ public class MedicalIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			MedicalIfMethods.condomsWhileIfLoop();
+			MedicalIfMethods.condomsWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void coldAndFluWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void coldAndFluWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnColdAndFlu = ScannerClass.scanner.nextInt();
 		Medical medicalChoiceColdAndFlu = MedicalListCreator.getColdAndFlu();
@@ -127,7 +118,7 @@ public class MedicalIfMethods {
 		}
 		if (addRemoveOrReturnColdAndFlu == 2) {
 			out.println(MedicalListCreator.create());
-			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod();
+			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnColdAndFlu == 3) {
 			out.println(MedicalListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -139,7 +130,7 @@ public class MedicalIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			MedicalIfMethods.coldAndFluWhileIfLoop();
+			MedicalIfMethods.coldAndFluWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}

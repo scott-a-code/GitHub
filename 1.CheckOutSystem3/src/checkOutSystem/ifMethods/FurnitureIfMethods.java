@@ -12,15 +12,12 @@ import checkOutSystem.items.Item;
 import checkOutSystem.listCreators.FurnitureListCreator;
 import checkOutSystem.listCreators.MedicalListCreator;
 import checkOutSystem.mapScannerComparatorPaymentmethods.IncrementorDecrementorMethods;
-import checkOutSystem.mapScannerComparatorPaymentmethods.MapShoppingList;
 import checkOutSystem.mapScannerComparatorPaymentmethods.PriceCalcAndPayment;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
 public class FurnitureIfMethods {
 
-	public static void couchWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void couchWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnCouch = ScannerClass.scanner.nextInt();
 		Furniture furnitureChoiceCouch = FurnitureListCreator.getCouch();
@@ -32,7 +29,7 @@ public class FurnitureIfMethods {
 		}
 		if (addRemoveOrReturnCouch == 2) {
 			out.println(MedicalListCreator.create());
-			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod();
+			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnCouch == 3) {
 			out.println(MedicalListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -44,15 +41,13 @@ public class FurnitureIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FurnitureIfMethods.couchWhileIfLoop();
+			FurnitureIfMethods.couchWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void tableWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void tableWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturntable = ScannerClass.scanner.nextInt();
 		Furniture furnitureChoicetable = FurnitureListCreator.getTable();
@@ -64,7 +59,7 @@ public class FurnitureIfMethods {
 		}
 		if (addRemoveOrReturntable == 2) {
 			out.println(MedicalListCreator.create());
-			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod();
+			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturntable == 3) {
 			out.println(MedicalListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -76,15 +71,13 @@ public class FurnitureIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FurnitureIfMethods.tableWhileIfLoop();
+			FurnitureIfMethods.tableWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void kitchenWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void kitchenWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnKitchen = ScannerClass.scanner.nextInt();
 		Furniture furnitureChoiceKitchen = FurnitureListCreator.getKitchen();
@@ -96,7 +89,7 @@ public class FurnitureIfMethods {
 		}
 		if (addRemoveOrReturnKitchen == 2) {
 			out.println(MedicalListCreator.create());
-			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod();
+			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnKitchen == 3) {
 			out.println(MedicalListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -108,15 +101,13 @@ public class FurnitureIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FurnitureIfMethods.kitchenWhileIfLoop();
+			FurnitureIfMethods.kitchenWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
 	}
 
-	public static void lampWhileIfLoop() throws InterruptedException {
-		MapShoppingList shopList = new MapShoppingList();
-		TreeMap<Item, Integer> shoppingList = shopList.getShoppingList();
+	public static void lampWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
 		int addRemoveOrReturnLamp = ScannerClass.scanner.nextInt();
 		Furniture furnitureChoiceLamp = FurnitureListCreator.getLamp();
@@ -128,7 +119,7 @@ public class FurnitureIfMethods {
 		}
 		if (addRemoveOrReturnLamp == 2) {
 			out.println(MedicalListCreator.create());
-			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod();
+			MedicalChoiceSwitchMethod.medicalChoiceSwitchMethod(shoppingList);
 		} else if (addRemoveOrReturnLamp == 3) {
 			out.println(MedicalListCreator.create());
 			MainMenuOptionsMethod.mainMenuOptions();
@@ -140,7 +131,7 @@ public class FurnitureIfMethods {
 			MainMenuOptionsMethod.mainMenuOptions();
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FurnitureIfMethods.lampWhileIfLoop();
+			FurnitureIfMethods.lampWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
