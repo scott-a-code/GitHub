@@ -13,7 +13,9 @@ import checkOutSystem.mapScannerComparatorPaymentmethods.IncrementorDecrementorM
 import checkOutSystem.mapScannerComparatorPaymentmethods.PriceCalcAndPayment;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
-public class FoodIfMethodsRefactored2 {
+//Class still being amended - not currently in use
+
+public class FoodIfMethodsOnGoingRefactor1 {
 
 	public static void breadWhileIfLoop(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
@@ -39,7 +41,7 @@ public class FoodIfMethodsRefactored2 {
 			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethodsRefactored2.breadWhileIfLoop(shoppingList);
+			FoodIfMethodsOnGoingRefactor1.breadWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
@@ -69,7 +71,7 @@ public class FoodIfMethodsRefactored2 {
 			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethodsRefactored2.milkWhileIfLoop(shoppingList);
+			FoodIfMethodsOnGoingRefactor1.milkWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
@@ -99,7 +101,7 @@ public class FoodIfMethodsRefactored2 {
 			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethodsRefactored2.cerealWhileIfLoop(shoppingList);
+			FoodIfMethodsOnGoingRefactor1.cerealWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
@@ -129,7 +131,7 @@ public class FoodIfMethodsRefactored2 {
 			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethodsRefactored2.eggsWhileIfLoop(shoppingList);
+			FoodIfMethodsOnGoingRefactor1.eggsWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
@@ -159,7 +161,7 @@ public class FoodIfMethodsRefactored2 {
 			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethodsRefactored2.minceWhileIfLoop(shoppingList);
+			FoodIfMethodsOnGoingRefactor1.minceWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
@@ -189,7 +191,7 @@ public class FoodIfMethodsRefactored2 {
 			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethodsRefactored2.pastaWhileIfLoop(shoppingList);
+			FoodIfMethodsOnGoingRefactor1.pastaWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
@@ -219,7 +221,7 @@ public class FoodIfMethodsRefactored2 {
 			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethodsRefactored2.soupWhileIfLoop(shoppingList);
+			FoodIfMethodsOnGoingRefactor1.soupWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}
@@ -249,7 +251,7 @@ public class FoodIfMethodsRefactored2 {
 			MainMenuOptionsMethod.mainMenuOptions(shoppingList);
 		} else {
 			System.out.println("Invalid input, please choose a valid option");
-			FoodIfMethodsRefactored2.applesWhileIfLoop(shoppingList);
+			FoodIfMethodsOnGoingRefactor1.applesWhileIfLoop(shoppingList);
 		}
 	} catch (InputMismatchException e) {
 	}

@@ -12,7 +12,9 @@ import checkOutSystem.listCreators.FoodListCreator;
 import checkOutSystem.mapScannerComparatorPaymentmethods.IncrementorDecrementorMethods;
 import checkOutSystem.mapScannerComparatorPaymentmethods.ScannerClass;
 
-public class FoodChoiceSwitchMethodRefactored2 {
+//Class still being amended - not currently in use 
+
+public class FoodChoiceSwitchMethodOnGoingRefactor1 {
 
 	public static void foodChoiceSwitchMethod(TreeMap<Item, Integer> shoppingList) throws InterruptedException {
 		try {
@@ -77,7 +79,7 @@ public class FoodChoiceSwitchMethodRefactored2 {
 				System.exit(1);
 				break;
 			default:
-				FoodChoiceSwitchMethodRefactored2.foodChoiceSwitchMethod(shoppingList, choice1);
+				FoodChoiceSwitchMethodOnGoingRefactor1.foodChoiceSwitchMethod(shoppingList, choice1);
 			}
 			break;
 		}
@@ -149,7 +151,7 @@ public class FoodChoiceSwitchMethodRefactored2 {
 				System.exit(1);
 				break;
 			default:
-				FoodChoiceSwitchMethodRefactored2.foodChoiceSwitchMethod(shoppingList, choice1);
+				FoodChoiceSwitchMethodOnGoingRefactor1.foodChoiceSwitchMethod(shoppingList, choice1);
 			}
 			break;
 		}

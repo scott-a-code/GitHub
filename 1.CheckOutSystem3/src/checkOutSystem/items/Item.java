@@ -60,6 +60,8 @@ public class Item implements Comparable<Item> {
 
 	@Override
 	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
 		Item other = (Item) obj;
 		if (id != other.id)
 			return false;
